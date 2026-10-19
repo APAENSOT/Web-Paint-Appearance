@@ -13,16 +13,16 @@ permissions:
 
 jobs:
   frontend:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: frontend
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
         with:
           package_json_file: frontend/package.json
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: pnpm
@@ -36,13 +36,13 @@ jobs:
       - run: pnpm build
 
   backend:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: backend
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
           cache: pip
@@ -62,7 +62,7 @@ jobs:
 
   # The Cloud Run image, run the way Cloud Run runs it, against PostgreSQL.
   container:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [frontend, backend]
     services:
       postgres:
@@ -76,7 +76,7 @@ jobs:
     env:
       PGPASSWORD: ci-only-postgres
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Build the Cloud Run image
         run: docker build --tag paint-appearance:ci .
       - name: Roles and database (infra/gcp/README.md, step 3)
