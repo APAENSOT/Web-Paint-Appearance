@@ -1,0 +1,54 @@
+/* AR03 Analysis & Report. Status tones are the Monthly Overview's own tokens. */
+.ar03 {
+  --ar03-over: oklch(0.48 0.16 252); /* same as Film Monthly Overview's Over */
+}
+.dark .ar03 {
+  --ar03-over: oklch(0.76 0.13 252);
+}
+.ar03 [data-tone="PASS"] {
+  --tone: var(--nominal);
+}
+.ar03 [data-tone="WARNING"] {
+  --tone: var(--caution);
+}
+.ar03 [data-tone="FAIL"] {
+  --tone: var(--critical);
+}
+.ar03 [data-tone="OVER"] {
+  --tone: var(--ar03-over);
+}
+.ar03 [data-tone="NONE"] {
+  --tone: var(--muted-foreground);
+}
+
+.ar03 summary {
+  list-style: none;
+  cursor: pointer;
+}
+.ar03 summary::-webkit-details-marker {
+  display: none;
+}
+.ar03 summary:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+.ar03 .ar03-chevron {
+  transition: transform var(--dur-fast) var(--ease-ct);
+}
+.ar03 details[open] > summary .ar03-chevron {
+  transform: rotate(90deg);
+}
+
+/* The drill-down shows the Monthly Overview's charts; its page header and
+   model heading repeat what the row already says. */
+.ar03 .ar03-overview .wavescan-overview > section.panel:first-child,
+.ar03 .ar03-overview .wavescan-overview h3 {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ar03 .ar03-chevron {
+    transition: none;
+  }
+}

@@ -1,0 +1,82 @@
+.plant-standard__intro {
+  max-width: 72ch;
+}
+
+.plant-standard__intro h2 {
+  letter-spacing: -0.025em;
+}
+
+.plant-standard__intro p:last-child {
+  line-height: 1.5;
+}
+
+.plant-standard .family-standard-card {
+  background: var(--panel-raised);
+  box-shadow: var(--shadow-panel);
+}
+
+.plant-standard .family-standard-card__header::after {
+  display: none;
+}
+
+.plant-standard .family-standard-card__header {
+  padding-block: 16px;
+}
+
+.plant-standard .family-standard-card__header button[aria-expanded] {
+  align-self: stretch;
+}
+
+.plant-standard .family-standard-card__metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background: color-mix(in oklch, var(--family-accent) 5%, var(--panel-raised));
+}
+
+.plant-standard .family-standard-card__metric {
+  min-width: 0;
+  padding: 12px 14px;
+  background: var(--panel);
+}
+
+.plant-standard .family-standard-card__metric > span:first-child {
+  display: block;
+  min-height: 2.5em;
+  line-height: 1.25;
+}
+
+.plant-standard .family-standard-card__metric .num {
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.plant-standard .family-standard-card__metric:focus-within {
+  border-color: var(--ring);
+}
+
+@media (min-width: 760px) {
+  .plant-standard .family-standard-card__metrics {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .plant-standard .family-standard-card__metric:nth-child(3) {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plant-standard {
+    padding: 16px;
+  }
+
+  .plant-standard .family-standard-card__header {
+    padding: 14px 16px;
+  }
+
+  .plant-standard .family-standard-card__metrics {
+    padding: 12px;
+  }
+
+  .plant-standard .family-standard-card__metric {
+    padding: 10px;
+  }
+}

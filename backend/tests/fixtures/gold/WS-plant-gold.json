@@ -1,0 +1,1473 @@
+{
+  "task": "T58",
+  "decision": "T58-CONTEXT D-58-01..16",
+  "note": "Panel labels only, in file order (walk proof, not identity). No Serial, CF or other measure was read. Workbooks stay outside the repo.",
+  "orientation_rule": "D-58-04: HOOD / ROOF / FLOOR in the name (any case) = Horizontal, else Vertical.",
+  "pad_rule": "D-58-03: leading zeros of the leading number only (01HOOD == 1HOOD).",
+  "notes": [
+    "FVL vault CF_Sep.xlsx writes 01HOOD: the zero pad of 1HOOD, one point.",
+    "SAP P703 DBL RANGER: Checkzone cells that are not panels, not gold: ['M7_Carbonized_Gray', 'IGNITE ORANGE 3C']",
+    "SAP J73 DBL: Checkzone cells that are not panels, not gold: ['UM_Agate_Black_Met', 'Horizontal', 'Vertical', 'Cyclone terra green 4GREWHA']"
+  ],
+  "catalogues": [
+    {
+      "plant_code": "FVL",
+      "model_code": "P703 DBL RANGER",
+      "sources": [
+        {
+          "file": "CF_Aug.xlsx",
+          "sha256": "c0f9a8dae0ec329da740af29b04f76ffcce980ff7059804724bffe302854cad0"
+        },
+        {
+          "file": "FVL CF data input_Sep'26.xlsx",
+          "sha256": "ed0d35cbeba5f092b1a622e100a375e2baaa5346717749e56ae4c430f4e865f2"
+        },
+        {
+          "file": "CF_Sep.xlsx",
+          "sha256": "e3ecc6a7e209f262eeb0906aae71edc31b6b27fbe0d3d13a611448ce9d0f6a34"
+        }
+      ],
+      "point_count": 32,
+      "points": [
+        {
+          "point_no": 1,
+          "zone_code": "1HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 2,
+          "zone_code": "2HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 3,
+          "zone_code": "3HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 4,
+          "zone_code": "4HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 5,
+          "zone_code": "5HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 6,
+          "zone_code": "06LFFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 7,
+          "zone_code": "07LFFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 8,
+          "zone_code": "08LFFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 9,
+          "zone_code": "09LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 10,
+          "zone_code": "10LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 11,
+          "zone_code": "11ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 12,
+          "zone_code": "12LDRPOST",
+          "tolerance_group": "Vertical",
+          "panel_group": "PILLAR"
+        },
+        {
+          "point_no": 13,
+          "zone_code": "13LFRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 14,
+          "zone_code": "14ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 15,
+          "zone_code": "15RCPILLAR",
+          "tolerance_group": "Vertical",
+          "panel_group": "PILLAR"
+        },
+        {
+          "point_no": 16,
+          "zone_code": "16RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 17,
+          "zone_code": "17RTFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 18,
+          "zone_code": "18RTFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 19,
+          "zone_code": "19RTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 20,
+          "zone_code": "20RTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 21,
+          "zone_code": "21RTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 22,
+          "zone_code": "22LFBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 23,
+          "zone_code": "23LFBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 24,
+          "zone_code": "24LFBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 25,
+          "zone_code": "25TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 26,
+          "zone_code": "26TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 27,
+          "zone_code": "27TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 28,
+          "zone_code": "28TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 29,
+          "zone_code": "29TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 30,
+          "zone_code": "30RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 31,
+          "zone_code": "31RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 32,
+          "zone_code": "32RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        }
+      ]
+    },
+    {
+      "plant_code": "FVL",
+      "model_code": "CX743",
+      "sources": [
+        {
+          "file": "0013 leftover catalogue",
+          "sha256": null
+        },
+        {
+          "file": "FVL CF data input_Sep'26.xlsx",
+          "sha256": "ed0d35cbeba5f092b1a622e100a375e2baaa5346717749e56ae4c430f4e865f2"
+        }
+      ],
+      "point_count": 32,
+      "points": [
+        {
+          "point_no": 1,
+          "zone_code": "1HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 2,
+          "zone_code": "2HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 3,
+          "zone_code": "3HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 4,
+          "zone_code": "4HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 5,
+          "zone_code": "5HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 6,
+          "zone_code": "06LFFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 7,
+          "zone_code": "07LFFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 8,
+          "zone_code": "08LFFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 9,
+          "zone_code": "09LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 10,
+          "zone_code": "10LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 11,
+          "zone_code": "11LFRTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 12,
+          "zone_code": "12LFRTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 13,
+          "zone_code": "13LFRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 14,
+          "zone_code": "14LFRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 15,
+          "zone_code": "15LFRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 16,
+          "zone_code": "16ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 17,
+          "zone_code": "17LIFGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 18,
+          "zone_code": "18LIFTGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 19,
+          "zone_code": "19LIFTGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 20,
+          "zone_code": "20LIFTGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 21,
+          "zone_code": "21LIFTGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 22,
+          "zone_code": "22RTRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 23,
+          "zone_code": "23RTRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 24,
+          "zone_code": "24RTRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 25,
+          "zone_code": "25RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 26,
+          "zone_code": "26RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 27,
+          "zone_code": "27RTFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 28,
+          "zone_code": "28RTFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 29,
+          "zone_code": "29RTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 30,
+          "zone_code": "30RTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 31,
+          "zone_code": "31RTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 32,
+          "zone_code": "32ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        }
+      ]
+    },
+    {
+      "plant_code": "FVL",
+      "model_code": "V363",
+      "sources": [
+        {
+          "file": "0013 leftover catalogue",
+          "sha256": null
+        },
+        {
+          "file": "FVL CF data input_Sep'26.xlsx",
+          "sha256": "ed0d35cbeba5f092b1a622e100a375e2baaa5346717749e56ae4c430f4e865f2"
+        }
+      ],
+      "point_count": 32,
+      "points": [
+        {
+          "point_no": 1,
+          "zone_code": "1HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 2,
+          "zone_code": "2HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 3,
+          "zone_code": "3HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 4,
+          "zone_code": "4HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 5,
+          "zone_code": "5HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 6,
+          "zone_code": "06LFFTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 7,
+          "zone_code": "07LFFTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 8,
+          "zone_code": "08LFFTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 9,
+          "zone_code": "09LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 10,
+          "zone_code": "10LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 11,
+          "zone_code": "11LFROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 12,
+          "zone_code": "12LFRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 13,
+          "zone_code": "13LFRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 14,
+          "zone_code": "14LFRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 15,
+          "zone_code": "15LFRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 16,
+          "zone_code": "16LFRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 17,
+          "zone_code": "17SWINGGAT",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 18,
+          "zone_code": "18SWINGGAT",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 19,
+          "zone_code": "19SWINGGAT",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 20,
+          "zone_code": "20SWINGGAT",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 21,
+          "zone_code": "21SWINGGAT",
+          "tolerance_group": "Vertical",
+          "panel_group": "LIFTGATE"
+        },
+        {
+          "point_no": 22,
+          "zone_code": "22RTRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 23,
+          "zone_code": "23RTRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 24,
+          "zone_code": "24RTRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 25,
+          "zone_code": "25RTRQTR",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 26,
+          "zone_code": "26RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 27,
+          "zone_code": "27RTROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 28,
+          "zone_code": "28RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 29,
+          "zone_code": "29RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 30,
+          "zone_code": "30RTFTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 31,
+          "zone_code": "31RTFTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 32,
+          "zone_code": "32RTFTFENDER",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        }
+      ]
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "sources": [
+        {
+          "file": "09 Sep-26 P703 & J73 CF INPUT.xlsx",
+          "sha256": "3cd29db71b8b0b31c15181c28ed0e35a591b5acccb944d1c21befe0ac5887011"
+        },
+        {
+          "file": "8 Aug-26 P703 & J73 CF INPUT.xlsx",
+          "sha256": "77b2226ab07371fe8bb3f3e4f60425bdb4528a9a08531d6d028f6f4713399b74"
+        }
+      ],
+      "point_count": 32,
+      "points": [
+        {
+          "point_no": 1,
+          "zone_code": "01RHS Hood Rr28",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 2,
+          "zone_code": "02RHS Hood Frnt29",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 3,
+          "zone_code": "03Hood Middle30",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 4,
+          "zone_code": "04LHS Hood Frnt31",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 5,
+          "zone_code": "05LHS Hood Rr32",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 6,
+          "zone_code": "06LHS Fender Frnt1",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 7,
+          "zone_code": "07LHS Fender Middle2",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 8,
+          "zone_code": "08LHS Fender Rr3",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 9,
+          "zone_code": "09LHS FD Frnt4",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 10,
+          "zone_code": "10LHS FD Rr5",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 11,
+          "zone_code": "11LHS Roof6",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 12,
+          "zone_code": "12LHS RD RR7",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 13,
+          "zone_code": "13LHS C-Pillar8",
+          "tolerance_group": "Vertical",
+          "panel_group": "PILLAR"
+        },
+        {
+          "point_no": 14,
+          "zone_code": "14LHS Box Frnt9",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 15,
+          "zone_code": "15LHS Box Middle10",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 16,
+          "zone_code": "16LHS Box Rr11",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 17,
+          "zone_code": "17LHS TG Top12",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 18,
+          "zone_code": "18LHS TG Bot13",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 19,
+          "zone_code": "19Tailgate Middle14",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 20,
+          "zone_code": "20RHS TG Top15",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 21,
+          "zone_code": "21RHS TG Bot16",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 22,
+          "zone_code": "22RHS Box Rr17",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 23,
+          "zone_code": "23RHS Box Middle18",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 24,
+          "zone_code": "24RHS Box Frnt19",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 25,
+          "zone_code": "25RHS C-Pillar20",
+          "tolerance_group": "Vertical",
+          "panel_group": "PILLAR"
+        },
+        {
+          "point_no": 26,
+          "zone_code": "26RHS RD RR21",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 27,
+          "zone_code": "27RHS Roof22",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 28,
+          "zone_code": "28RHS FD Rr23",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 29,
+          "zone_code": "29RHS FD Frnt24",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 30,
+          "zone_code": "30RHS Fender Rr25",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 31,
+          "zone_code": "31RHS Fender Middl26",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 32,
+          "zone_code": "32RHS Fender Frnt27",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        }
+      ]
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "J73 DBL",
+      "sources": [
+        {
+          "file": "09 Sep-26 P703 & J73 CF INPUT.xlsx",
+          "sha256": "3cd29db71b8b0b31c15181c28ed0e35a591b5acccb944d1c21befe0ac5887011"
+        },
+        {
+          "file": "8 Aug-26 P703 & J73 CF INPUT.xlsx",
+          "sha256": "77b2226ab07371fe8bb3f3e4f60425bdb4528a9a08531d6d028f6f4713399b74"
+        }
+      ],
+      "point_count": 32,
+      "points": [
+        {
+          "point_no": 1,
+          "zone_code": "01RHS Hood Rr28",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 2,
+          "zone_code": "02RHS Hood Frnt29",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 3,
+          "zone_code": "03Hood Middle30",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 4,
+          "zone_code": "04LHS Hood Frnt31",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 5,
+          "zone_code": "05LHS Hood Rr32",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 6,
+          "zone_code": "06LHS Fender Frnt1",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 7,
+          "zone_code": "07LHS Fender Middle2",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 8,
+          "zone_code": "08LHS Fender Rr3",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 9,
+          "zone_code": "09LHS FD Frnt4",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 10,
+          "zone_code": "10LHS FD Rr5",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 11,
+          "zone_code": "11LHS Roof6",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 12,
+          "zone_code": "12LHS RD RR7",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 13,
+          "zone_code": "13LHS C-Pillar8",
+          "tolerance_group": "Vertical",
+          "panel_group": "PILLAR"
+        },
+        {
+          "point_no": 14,
+          "zone_code": "14LHS Box Frnt9",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 15,
+          "zone_code": "15LHS Box Middle10",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 16,
+          "zone_code": "16LHS Box Rr11",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 17,
+          "zone_code": "17LHS TG Top12",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 18,
+          "zone_code": "18LHS TG Bot13",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 19,
+          "zone_code": "19Tailgate Middle14",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 20,
+          "zone_code": "20RHS TG Top15",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 21,
+          "zone_code": "21RHS TG Bot16",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 22,
+          "zone_code": "22RHS Box Rr17",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 23,
+          "zone_code": "23RHS Box Middle18",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 24,
+          "zone_code": "24RHS Box Frnt19",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 25,
+          "zone_code": "25RHS C-Pillar20",
+          "tolerance_group": "Vertical",
+          "panel_group": "PILLAR"
+        },
+        {
+          "point_no": 26,
+          "zone_code": "26RHS RD RR21",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 27,
+          "zone_code": "27RHS Roof22",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 28,
+          "zone_code": "28RHS FD Rr23",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 29,
+          "zone_code": "29RHS FD Frnt24",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 30,
+          "zone_code": "30RHS Fender Rr25",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 31,
+          "zone_code": "31RHS Fender Middl26",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 32,
+          "zone_code": "32RHS Fender Frnt27",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        }
+      ]
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "sources": [
+        {
+          "file": "08 Aug2026 CF data FTM.xlsx",
+          "sha256": "3f9d34a92afd3d0619764d9b50e3fdebd5048d9c2f78922041f2050fc989a8c3"
+        }
+      ],
+      "point_count": 32,
+      "points": [
+        {
+          "point_no": 1,
+          "zone_code": "01HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 2,
+          "zone_code": "02HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 3,
+          "zone_code": "03HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 4,
+          "zone_code": "04HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 5,
+          "zone_code": "05HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 6,
+          "zone_code": "06LFFFEND",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 7,
+          "zone_code": "07LFFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 8,
+          "zone_code": "08LFFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 9,
+          "zone_code": "09LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 10,
+          "zone_code": "10LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 11,
+          "zone_code": "11ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 12,
+          "zone_code": "12LFRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 13,
+          "zone_code": "13LFRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 14,
+          "zone_code": "14LFBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 15,
+          "zone_code": "15LFBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 16,
+          "zone_code": "16LFBOXS",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 17,
+          "zone_code": "17TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 18,
+          "zone_code": "18TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 19,
+          "zone_code": "19TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 20,
+          "zone_code": "20TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 21,
+          "zone_code": "21TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 22,
+          "zone_code": "22RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 23,
+          "zone_code": "23RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 24,
+          "zone_code": "24RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 25,
+          "zone_code": "25RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 26,
+          "zone_code": "26RTRDOO",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 27,
+          "zone_code": "27ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 28,
+          "zone_code": "28RTFTDOO",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 29,
+          "zone_code": "29RTFTDOO",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 30,
+          "zone_code": "30RTFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 31,
+          "zone_code": "31RTFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 32,
+          "zone_code": "32RTFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        }
+      ]
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "sources": [
+        {
+          "file": "08 Aug2026 CF data FTM.xlsx",
+          "sha256": "3f9d34a92afd3d0619764d9b50e3fdebd5048d9c2f78922041f2050fc989a8c3"
+        }
+      ],
+      "point_count": 32,
+      "points": [
+        {
+          "point_no": 1,
+          "zone_code": "01HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 2,
+          "zone_code": "02HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 3,
+          "zone_code": "03HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 4,
+          "zone_code": "04HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 5,
+          "zone_code": "05HOOD",
+          "tolerance_group": "Horizontal",
+          "panel_group": "HOOD"
+        },
+        {
+          "point_no": 6,
+          "zone_code": "06LFFFEND",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 7,
+          "zone_code": "07LFFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 8,
+          "zone_code": "08LFFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 9,
+          "zone_code": "09LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 10,
+          "zone_code": "10LFFTDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 11,
+          "zone_code": "11ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 12,
+          "zone_code": "12LFRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 13,
+          "zone_code": "13LFRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 14,
+          "zone_code": "14LFBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 15,
+          "zone_code": "15LFBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 16,
+          "zone_code": "16LFBOXS",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 17,
+          "zone_code": "17TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 18,
+          "zone_code": "18TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 19,
+          "zone_code": "19TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 20,
+          "zone_code": "20TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 21,
+          "zone_code": "21TGATE",
+          "tolerance_group": "Vertical",
+          "panel_group": "TAILGATE"
+        },
+        {
+          "point_no": 22,
+          "zone_code": "22RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 23,
+          "zone_code": "23RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 24,
+          "zone_code": "24RTBOXSD",
+          "tolerance_group": "Vertical",
+          "panel_group": "BOX"
+        },
+        {
+          "point_no": 25,
+          "zone_code": "25RTRDOOR",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 26,
+          "zone_code": "26RTRDOO",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 27,
+          "zone_code": "27ROOF",
+          "tolerance_group": "Horizontal",
+          "panel_group": "ROOF"
+        },
+        {
+          "point_no": 28,
+          "zone_code": "28RTFTDOO",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 29,
+          "zone_code": "29RTFTDOO",
+          "tolerance_group": "Vertical",
+          "panel_group": "DOOR"
+        },
+        {
+          "point_no": 30,
+          "zone_code": "30RTFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 31,
+          "zone_code": "31RTFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        },
+        {
+          "point_no": 32,
+          "zone_code": "32RTFENDE",
+          "tolerance_group": "Vertical",
+          "panel_group": "FENDER"
+        }
+      ]
+    }
+  ]
+}

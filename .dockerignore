@@ -1,0 +1,17 @@
+**/.git
+**/node_modules
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/*.log
+**/.env
+**/.env.*
+frontend/dist
+frontend/test-results
+test-results
+data
+work
+backend/tests
+frontend/tests
+# docs/ is 3 GB of reports and evidence; the image needs none of it.
+docs

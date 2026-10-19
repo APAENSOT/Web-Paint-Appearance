@@ -1,0 +1,119 @@
+.theme-toggle {
+  --theme-sky-day: #7ca5f8;
+  --theme-sky-night: #111927;
+  --theme-celestial: #fff;
+  --theme-motion-curve: cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 44px;
+  padding: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--theme-sky-day);
+  color: var(--theme-celestial);
+  cursor: pointer;
+  transition: transform 160ms var(--theme-motion-curve);
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-toggle:active {
+  transform: scale(0.96);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 4px;
+}
+.theme-toggle__night {
+  position: absolute;
+  inset: 0;
+  background: var(--theme-sky-night);
+  opacity: 0;
+  transition: opacity 250ms var(--theme-motion-curve);
+}
+.theme-toggle__sky {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.theme-toggle__thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 34px;
+  height: 34px;
+  transform: translateX(0);
+  transition: transform 250ms var(--theme-motion-curve);
+}
+.theme-toggle__orb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 12%));
+}
+.theme-toggle__sun,
+.theme-toggle__moon {
+  transform-origin: 16px 16px;
+  transition:
+    opacity 200ms var(--theme-motion-curve),
+    transform 250ms var(--theme-motion-curve);
+}
+.theme-toggle__moon {
+  opacity: 0;
+  transform: rotate(-35deg) scale(0.8);
+}
+.theme-toggle__stars,
+.theme-toggle__day-motes {
+  transition:
+    opacity 200ms var(--theme-motion-curve),
+    transform 250ms var(--theme-motion-curve);
+}
+.theme-toggle__stars {
+  opacity: 0;
+  transform: translateX(8px);
+}
+.theme-toggle[data-theme="dark"] .theme-toggle__night,
+.theme-toggle[data-theme="dark"] .theme-toggle__stars,
+.theme-toggle[data-theme="dark"] .theme-toggle__moon {
+  opacity: 1;
+}
+.theme-toggle[data-theme="dark"] .theme-toggle__thumb {
+  transform: translateX(40px);
+}
+.theme-toggle[data-theme="dark"] .theme-toggle__stars,
+.theme-toggle[data-theme="dark"] .theme-toggle__moon {
+  transform: translateX(0);
+}
+.theme-toggle[data-theme="dark"] .theme-toggle__sun {
+  opacity: 0;
+  transform: rotate(35deg) scale(0.8);
+}
+.theme-toggle[data-theme="dark"] .theme-toggle__day-motes {
+  opacity: 0;
+  transform: translateX(-8px);
+}
+@media (hover: hover) and (pointer: fine) {
+  .theme-toggle:hover .theme-toggle__orb {
+    transform: scale(1.06);
+  }
+  .theme-toggle__orb {
+    transition: transform 160ms var(--theme-motion-curve);
+  }
+}
+.theme-toggle[data-motion="instant"],
+.theme-toggle[data-motion="instant"] * {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle,
+  .theme-toggle * {
+    transition: none;
+  }
+  .theme-toggle:active,
+  .theme-toggle:hover .theme-toggle__orb {
+    transform: none;
+  }
+}

@@ -1,0 +1,241 @@
+.asset-review {
+  min-height: 100vh;
+  padding: 28px;
+  color: #e8edf1;
+  background: #0b1420;
+  font-family: Barlow, sans-serif;
+}
+.asset-review-header {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.asset-review-header a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #b9c8d7;
+  text-underline-offset: 4px;
+  margin-bottom: 14px;
+}
+.asset-review h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+.asset-review-header p {
+  color: #b4c3d0;
+  margin: 0;
+}
+.asset-review-status {
+  font-size: 14px;
+  color: #e6c588;
+  white-space: nowrap;
+}
+.asset-review-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 24px;
+}
+.asset-review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.asset-review-list button {
+  display: grid;
+  text-align: left;
+  gap: 5px;
+  padding: 14px 16px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease-out,
+    border-color 160ms ease-out;
+}
+.asset-review-list button[aria-pressed="true"] {
+  background: #25303b;
+  border-color: #d9a84c;
+}
+.asset-review-list button:hover {
+  background: #1c2a39;
+}
+.asset-review-list span {
+  font-size: 13px;
+  color: #b4c3d0;
+}
+.asset-review-blocked {
+  margin-top: 16px;
+  padding: 16px;
+  border-top: 1px solid #334251;
+}
+.asset-review-blocked p,
+.asset-review-footnote {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b4c3d0;
+}
+.asset-review-main {
+  min-width: 0;
+}
+.asset-review-heading h2 {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+.asset-review-heading p {
+  margin: 0 0 18px;
+  color: #b4c3d0;
+  max-width: 76ch;
+  line-height: 1.5;
+  min-height: 42px;
+}
+.asset-review-stage-wrap {
+  position: relative;
+  border: 1px solid #334251;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #192733;
+}
+.asset-review-stage {
+  width: 100%;
+  height: min(58vh, 640px);
+  min-height: 360px;
+}
+.asset-review-stage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.asset-review-orbit {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  pointer-events: none;
+  font-size: 13px;
+  color: #d6e2ec;
+  background: #0b1420;
+  padding: 6px 9px;
+  border-radius: 5px;
+}
+.asset-review-tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 12px;
+}
+.asset-review-tools button,
+.asset-review-feedback button {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  background: #182736;
+  border: 1px solid #415466;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.asset-review button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.asset-review-tools label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 4px;
+  font-size: 14px;
+}
+.asset-review input {
+  accent-color: #d9a84c;
+}
+.asset-review input[type="color"] {
+  width: 38px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.asset-review-feedback {
+  min-height: 24px;
+  color: #d5dfeb;
+  font-size: 14px;
+}
+.asset-review-feedback button {
+  margin-left: 12px;
+}
+.asset-review :focus-visible {
+  outline: 2px solid #f0c477;
+  outline-offset: 3px;
+}
+.asset-review ::selection {
+  color: #0b1420;
+  background: #f0c477;
+}
+@media (max-width: 800px) {
+  .asset-review {
+    padding: 18px;
+  }
+  .asset-review-header {
+    display: block;
+  }
+  .asset-review-status {
+    display: block;
+    margin-top: 12px;
+  }
+  .asset-review-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .asset-review-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .asset-review-blocked {
+    grid-column: 1/-1;
+  }
+  .asset-review-stage {
+    min-height: 340px;
+    height: 52vh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .asset-review-list button {
+    transition: none;
+  }
+}
+@media (max-width: 800px) {
+  .asset-review .studio-cad-nav {
+    position: relative;
+    inset: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 8px 12px;
+    border-top: 1px solid #334251;
+  }
+  .asset-review .studio-cube-perspective {
+    width: 88px;
+    height: 98px;
+    flex: 0 0 88px;
+  }
+  .asset-review .studio-cad-nav select {
+    width: 92px;
+  }
+  .asset-review .studio-cad-buttons {
+    flex: 0 0 92px;
+  }
+  .asset-review-orbit {
+    top: 12px;
+    bottom: auto;
+  }
+}

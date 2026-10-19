@@ -1,0 +1,74 @@
+.model-studio-header {
+  align-items: flex-end;
+}
+
+.model-studio-header > div {
+  max-width: 54ch;
+}
+
+.model-studio-header p {
+  margin-top: 4px;
+}
+
+.studio-colors h3 {
+  letter-spacing: -0.02em;
+}
+
+.studio-colors > p {
+  margin-top: 4px;
+}
+
+.studio-color-row {
+  border-color: var(--border);
+  background: var(--panel);
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.studio-color-row:hover {
+  background: var(--surface-2);
+}
+
+.studio-color-row.is-selected {
+  border-color: var(--primary);
+}
+
+.studio-color-info {
+  margin-top: 18px;
+}
+
+@media (min-width: 861px) and (max-width: 1050px) {
+  .studio-workspace {
+    grid-template-columns: minmax(0, 1fr) 270px;
+  }
+
+  .studio-colors {
+    border-top: 0;
+    border-left: 1px solid var(--border);
+    padding: 20px 16px;
+  }
+
+  .studio-swatches {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .studio-unpainted {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .studio-swatches {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .studio-status,
+  .studio-orbit-hint {
+    max-width: calc(100% - 96px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-color-row {
+    transition: none;
+  }
+}

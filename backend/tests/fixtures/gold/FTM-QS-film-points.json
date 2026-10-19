@@ -1,0 +1,489 @@
+{
+  "task": "T54",
+  "decision": "T53-CONTEXT D-53-01..06",
+  "note": "Location labels only, in file order. No thickness, VIN, Job Number or other cell was read into this file. The workbook stays outside the repo. Sequence is walk proof only; identity is the name.",
+  "plant_code": "FTM",
+  "source_file": "Desert Island Blue_RB_1943641_PP Build.xlsx",
+  "source_sheet": "Quick Summary",
+  "source_sha256": "f7ef7544d264a222155c8e0af5b31e621d36650d5acdc347101447698ba5f1c3",
+  "applies_to_models": [
+    "P703 DBL RANGER",
+    "P703 DBL RAPTOR",
+    "P703 RAPCAP",
+    "P703 SGL"
+  ],
+  "orientation_rule": "D-53-06 fallback: HOOD / ROOF / FLOOR in the name = H, else V. No OCR.",
+  "point_count": 94,
+  "locations": [
+    {
+      "point_no": 1,
+      "point_code": "001HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 2,
+      "point_code": "002HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 3,
+      "point_code": "003HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 4,
+      "point_code": "004HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 5,
+      "point_code": "005HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 6,
+      "point_code": "006HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 7,
+      "point_code": "007HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 8,
+      "point_code": "008HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 9,
+      "point_code": "009HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 10,
+      "point_code": "010HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 11,
+      "point_code": "011HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 12,
+      "point_code": "012HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 13,
+      "point_code": "013HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 14,
+      "point_code": "014HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 15,
+      "point_code": "015HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_no": 16,
+      "point_code": "016LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 17,
+      "point_code": "017LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 18,
+      "point_code": "018LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 19,
+      "point_code": "019LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 20,
+      "point_code": "020LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 21,
+      "point_code": "021LAPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 22,
+      "point_code": "022LAPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 23,
+      "point_code": "023ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 24,
+      "point_code": "024ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 25,
+      "point_code": "025ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 26,
+      "point_code": "026ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 27,
+      "point_code": "027ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 28,
+      "point_code": "028ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 29,
+      "point_code": "029LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 30,
+      "point_code": "030LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 31,
+      "point_code": "031LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 32,
+      "point_code": "032LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 33,
+      "point_code": "033LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 34,
+      "point_code": "034LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 35,
+      "point_code": "035LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 36,
+      "point_code": "036LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 37,
+      "point_code": "037LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 38,
+      "point_code": "038LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 39,
+      "point_code": "039LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 40,
+      "point_code": "040LCPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 41,
+      "point_code": "041ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 42,
+      "point_code": "042ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 43,
+      "point_code": "043ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_no": 44,
+      "point_code": "044RCPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 45,
+      "point_code": "045RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 46,
+      "point_code": "046RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 47,
+      "point_code": "047RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 48,
+      "point_code": "048RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 49,
+      "point_code": "049RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 50,
+      "point_code": "050RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 51,
+      "point_code": "051RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 52,
+      "point_code": "052RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 53,
+      "point_code": "053RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 54,
+      "point_code": "054RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 55,
+      "point_code": "055RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 56,
+      "point_code": "056RAPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 57,
+      "point_code": "057RAPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 58,
+      "point_code": "058RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 59,
+      "point_code": "059RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 60,
+      "point_code": "060RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 61,
+      "point_code": "061RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 62,
+      "point_code": "062RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_no": 63,
+      "point_code": "063RAPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 64,
+      "point_code": "064RAPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_no": 65,
+      "point_code": "065LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 66,
+      "point_code": "066LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 67,
+      "point_code": "067LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 68,
+      "point_code": "068LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 69,
+      "point_code": "069LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 70,
+      "point_code": "070LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 71,
+      "point_code": "071TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 72,
+      "point_code": "072TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 73,
+      "point_code": "073TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 74,
+      "point_code": "074TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 75,
+      "point_code": "075TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 76,
+      "point_code": "076TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 77,
+      "point_code": "077TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 78,
+      "point_code": "078TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 79,
+      "point_code": "079TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 80,
+      "point_code": "080RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 81,
+      "point_code": "081RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 82,
+      "point_code": "082RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 83,
+      "point_code": "083RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 84,
+      "point_code": "084RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 85,
+      "point_code": "085RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_no": 86,
+      "point_code": "086RBXFRONT",
+      "orientation": "V"
+    },
+    {
+      "point_no": 87,
+      "point_code": "087RBXFRONT",
+      "orientation": "V"
+    },
+    {
+      "point_no": 88,
+      "point_code": "088LBXFRONT",
+      "orientation": "V"
+    },
+    {
+      "point_no": 89,
+      "point_code": "089LBXFRONT",
+      "orientation": "V"
+    },
+    {
+      "point_no": 90,
+      "point_code": "090LBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_no": 91,
+      "point_code": "091LBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_no": 92,
+      "point_code": "092LBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_no": 93,
+      "point_code": "093RBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_no": 94,
+      "point_code": "094RBXFLOOR",
+      "orientation": "H"
+    }
+  ]
+}

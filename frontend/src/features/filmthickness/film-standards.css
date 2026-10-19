@@ -1,0 +1,56 @@
+﻿.film-standards .film-mobile-label {
+  display: none;
+}
+@media (max-width: 767px) {
+  .film-standards .film-colour-table,
+  .film-standards .film-colour-table tbody {
+    display: block;
+  }
+  .film-standards .film-colour-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+  .film-standards .film-colour-table tbody tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px;
+  }
+  .film-standards .film-colour-name {
+    display: block;
+    padding: 0 0 12px;
+  }
+  .film-standards .film-number-cell {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    padding: 6px 0;
+    text-align: left;
+  }
+  .film-standards .film-mobile-label {
+    display: inline;
+  }
+  .film-standards .film-action {
+    display: block;
+    padding: 12px 0 0;
+    text-align: left;
+  }
+}
+.film-standards .film-disclosure summary:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .film-standards *,
+  .film-standards *::before,
+  .film-standards *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

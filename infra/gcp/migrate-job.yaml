@@ -1,0 +1,31 @@
+# Cloud Run job: run Alembic migrations with the same image, as `migrator`.
+# The service never holds the migrator credential (docs/03-SECURITY.md section 3).
+#   gcloud run jobs replace infra/gcp/migrate-job.yaml --region ${REGION}
+#   gcloud run jobs execute paint-appearance-migrate --region ${REGION} --wait
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: paint-appearance-migrate
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/cloudsql-instances: ${PROJECT_ID}:${REGION}:${SQL_INSTANCE}
+    spec:
+      taskCount: 1
+      template:
+        spec:
+          serviceAccountName: paint-appearance-migrate@${PROJECT_ID}.iam.gserviceaccount.com
+          maxRetries: 0
+          timeoutSeconds: 1800
+          containers:
+            - image: ${REGION}-docker.pkg.dev/${PROJECT_ID}/paint-appearance/app:${TAG}
+              command: ["alembic"]
+              # Overridable per run: gcloud run jobs execute ... --args=downgrade,-1
+              args: ["upgrade", "head"]
+              env:
+                - name: MIGRATOR_DATABASE_URL
+                  valueFrom:
+                    secretKeyRef:
+                      name: paint-appearance-migrator-database-url
+                      key: latest

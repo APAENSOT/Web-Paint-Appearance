@@ -1,0 +1,605 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@import "./components/ct/theme-toggle.css";
+@import "./components/ct/interaction-motion.css";
+@import "./features/overview/landing-waves.css";
+@import "./features/overview/plant-explorer.css";
+@import "./features/overview/img-overview.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * MERIDIAN CONTROL TOWER — design system
+ * Machined, not decorated: flat page, one shadow level, hairline borders,
+ * mono tabular numerals for every figure, and a three-step status ramp
+ * (nominal / caution / critical) recalibrated per theme so both text and
+ * 3px map dots clear WCAG AA on their own surface.
+ * Light is the default; `.dark` on <html> switches to the navy control room.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* status ramp */
+  --color-nominal: var(--nominal);
+  --color-caution: var(--caution);
+  --color-critical: var(--critical);
+  --color-signal: var(--signal);
+
+  /* surfaces */
+  --color-panel: var(--panel);
+  --color-panel-raised: var(--panel-raised);
+  --color-hairline: var(--hairline);
+
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ————— light (default) ————— */
+:root {
+  --radius: 6px;
+
+  --background: oklch(0.981 0.006 85);
+  --foreground: oklch(0.24 0.018 258);
+
+  --panel: oklch(1 0 0);
+  --panel-raised: oklch(0.975 0.004 85);
+  --hairline: oklch(0.62 0.03 250 / 22%);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.018 258);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.018 258);
+
+  /* deepened amber: 5.3:1 on white, holds as text and as a 1px stroke */
+  --primary: oklch(0.53 0.135 58);
+  --primary-foreground: oklch(0.99 0.003 85);
+  --primary-soft: oklch(0.53 0.135 58 / 8%);
+
+  --secondary: oklch(0.955 0.005 85);
+  --secondary-foreground: oklch(0.28 0.018 258);
+
+  --muted: oklch(0.96 0.004 85);
+  --muted-foreground: oklch(0.47 0.016 255);
+
+  --accent: oklch(0.5 0.1 235);
+  --accent-foreground: oklch(0.99 0.003 85);
+
+  --destructive: oklch(0.5 0.19 26);
+  --destructive-foreground: oklch(0.99 0.003 85);
+
+  --border: oklch(0.898 0.006 258);
+  --input: oklch(0.88 0.008 258);
+  --ring: oklch(0.53 0.135 58);
+
+  --nominal: oklch(0.48 0.125 155);
+  --caution: oklch(0.55 0.13 66);
+  --critical: oklch(0.5 0.19 26);
+  --signal: oklch(0.5 0.1 235);
+
+  /* app chrome */
+  --header-bg: oklch(1 0 0 / 92%);
+  --strip: oklch(0.972 0.005 85);
+  --surface-2: oklch(0.24 0.018 258 / 3.5%);
+  --switch-well: oklch(0.93 0.006 258);
+  --map-land-a: oklch(0.945 0.008 250);
+  --map-land-b: oklch(0.915 0.01 250);
+  --zone-fill: oklch(0.945 0.006 258);
+  --shadow-panel:
+    0 1px 2px oklch(0.24 0.018 258 / 6%), 0 6px 16px -10px oklch(0.24 0.018 258 / 14%);
+
+  /* Color-family identity. Decorative only; labels remain the source of meaning. */
+  --family-lm: oklch(0.62 0.08 220);
+  --family-mm: oklch(0.57 0.13 248);
+  --family-dm: oklch(0.5 0.13 286);
+  --family-ls: oklch(0.62 0.12 150);
+  --family-ms: oklch(0.62 0.15 58);
+  --family-ds: oklch(0.52 0.15 24);
+}
+
+/* ————— dark (navy control room) ————— */
+.dark {
+  --background: oklch(0.166 0.032 262);
+  --foreground: oklch(0.93 0.014 250);
+
+  --panel: oklch(0.208 0.032 261);
+  --panel-raised: oklch(0.245 0.034 261);
+  --hairline: oklch(0.62 0.06 220 / 18%);
+
+  --card: oklch(0.208 0.032 261);
+  --card-foreground: oklch(0.93 0.014 250);
+  --popover: oklch(0.228 0.034 261);
+  --popover-foreground: oklch(0.95 0.012 250);
+
+  --primary: oklch(0.79 0.155 72);
+  --primary-foreground: oklch(0.18 0.035 262);
+  --primary-soft: oklch(0.79 0.155 72 / 12%);
+
+  --secondary: oklch(0.27 0.035 261);
+  --secondary-foreground: oklch(0.9 0.015 250);
+
+  --muted: oklch(0.26 0.03 261);
+  --muted-foreground: oklch(0.72 0.03 244);
+
+  --accent: oklch(0.72 0.11 215);
+  --accent-foreground: oklch(0.17 0.035 262);
+
+  --destructive: oklch(0.62 0.208 22);
+  --destructive-foreground: oklch(0.97 0.01 250);
+
+  --border: oklch(0.32 0.035 255);
+  --input: oklch(0.3 0.035 255);
+  --ring: oklch(0.79 0.155 72);
+
+  --nominal: oklch(0.76 0.15 158);
+  --caution: oklch(0.82 0.16 82);
+  --critical: oklch(0.7 0.19 24);
+  --signal: oklch(0.76 0.11 210);
+
+  --header-bg: oklch(0.166 0.032 262 / 92%);
+  --strip: oklch(0.19 0.032 261);
+  --surface-2: oklch(1 0 0 / 4%);
+  --switch-well: oklch(0.14 0.03 262);
+  --map-land-a: oklch(0.3 0.05 250);
+  --map-land-b: oklch(0.22 0.04 258);
+  --zone-fill: oklch(0.26 0.03 258);
+  --shadow-panel: none;
+
+  --family-lm: oklch(0.78 0.08 220);
+  --family-mm: oklch(0.72 0.13 248);
+  --family-dm: oklch(0.68 0.13 286);
+  --family-ls: oklch(0.75 0.13 150);
+  --family-ms: oklch(0.79 0.16 72);
+  --family-ds: oklch(0.7 0.17 24);
+}
+
+@layer base {
+  html {
+    scrollbar-color: var(--muted-foreground) var(--panel);
+    scrollbar-width: thin;
+  }
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+  input,
+  textarea {
+    caret-color: var(--primary);
+  }
+  button,
+  a,
+  summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  /* Native popup menus may not paint the select's background on Windows.
+     Always provide both colours so inherited light text cannot land on white. */
+  select option,
+  select optgroup {
+    background-color: var(--popover);
+    color: var(--popover-foreground);
+  }
+
+  select option:disabled {
+    color: var(--muted-foreground);
+  }
+
+  @media (forced-colors: active) {
+    select option,
+    select optgroup {
+      background-color: Canvas;
+      color: CanvasText;
+    }
+    select option:disabled {
+      color: GrayText;
+    }
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "tnum" 1;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.01em;
+  }
+}
+
+.skip-workspace {
+  position: fixed;
+  z-index: 100;
+  top: 8px;
+  left: 16px;
+  padding: 12px 18px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border-radius: var(--radius-sm);
+  transform: translateY(-160%);
+}
+.skip-workspace:focus {
+  transform: translateY(0);
+}
+
+@utility num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.02em;
+}
+
+/* ————— motion + surface scale (one system for all three pages) —————
+   Colour discipline:
+   · status ramp (nominal/caution/critical) = feed status ONLY
+   · model accent (Ignite Orange etc.)      = colour/model identity ONLY
+   · primary amber                          = interactive affordances ONLY */
+:root {
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-slow: 480ms;
+  --ease-ct: cubic-bezier(0.22, 1, 0.36, 1);
+  --panel-sunken: oklch(0.24 0.018 258 / 4%);
+}
+.dark {
+  --panel-sunken: oklch(0 0 0 / 22%);
+}
+
+/* sunken well for lists / plot beds */
+@utility panel-sunken {
+  background: var(--panel-sunken);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+/* shared gradient hairline under every page header */
+@utility rule-gradient {
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-border) 45%, transparent);
+}
+
+/* content swap between Display / Setting lenses */
+@keyframes ct-swap {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.995);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@utility animate-swap {
+  animation: ct-swap var(--dur-base) var(--ease-ct) both;
+}
+
+/* boxplot boxes grow out of the median line on mount */
+@keyframes ct-grow-y {
+  from {
+    transform: scaleY(0.02);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@utility animate-grow-y {
+  animation: ct-grow-y var(--dur-slow) var(--ease-ct) both;
+}
+
+/* visible keyboard focus everywhere */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted-foreground);
+}
+
+/* Panel: hairline border, small consistent radius, one shadow level */
+@utility panel {
+  position: relative;
+  background: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+}
+
+/* Family cards use category identity, not individual paint-colour identity. */
+.family-standard-card {
+  --family-accent: var(--signal);
+  --family-glow: color-mix(in oklch, var(--family-accent) 18%, transparent);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid color-mix(in oklch, var(--family-accent) 48%, var(--border));
+  border-radius: calc(var(--radius-md) + 4px);
+  background:
+    radial-gradient(circle at 92% 3%, var(--family-glow) 0 10%, transparent 32%),
+    linear-gradient(135deg, var(--family-glow), transparent 44%), var(--panel-raised);
+  box-shadow:
+    inset 4px 0 0 var(--family-accent),
+    var(--shadow-panel);
+}
+
+.family-standard-card[data-family="LM"] {
+  --family-accent: var(--family-lm);
+}
+.family-standard-card[data-family="MM"] {
+  --family-accent: var(--family-mm);
+}
+.family-standard-card[data-family="DM"] {
+  --family-accent: var(--family-dm);
+}
+.family-standard-card[data-family="LS"] {
+  --family-accent: var(--family-ls);
+}
+.family-standard-card[data-family="MS"] {
+  --family-accent: var(--family-ms);
+}
+.family-standard-card[data-family="DS"] {
+  --family-accent: var(--family-ds);
+}
+
+.family-standard-card__header {
+  position: relative;
+}
+
+.family-standard-card__header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -42px;
+  right: 10%;
+  width: 150px;
+  height: 92px;
+  border: 1px solid color-mix(in oklch, var(--family-accent) 28%, transparent);
+  border-radius: 50%;
+  transform: rotate(-12deg);
+}
+
+.family-standard-card__code {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding-inline: 8px;
+  border: 1px solid color-mix(in oklch, var(--family-accent) 60%, var(--border));
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--family-accent) 13%, var(--panel));
+  color: color-mix(in oklch, var(--family-accent) 75%, var(--foreground));
+}
+
+.family-standard-card__metric {
+  border-color: color-mix(in oklch, var(--family-accent) 24%, var(--border));
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in oklch, var(--family-accent) 8%, transparent),
+      transparent 58%
+    ),
+    var(--panel);
+}
+
+/* Control affordances (nav links, filter chips): normal-case sans, not stencil */
+@utility chip {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  color: var(--color-muted-foreground);
+  background: transparent;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    background-color 0.15s;
+}
+.chip:hover {
+  color: var(--color-foreground);
+  border-color: var(--color-input);
+}
+.chip[aria-pressed="true"],
+.chip[data-on="true"] {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: var(--primary-soft);
+}
+
+/* ————— orchestrated motion —————
+   Nothing animates at rest. Everything below is finite and fires only during
+   the disruption ripple, a state change, or a hover. */
+
+@keyframes ct-ping-ring {
+  0% {
+    r: 6;
+    opacity: 0.7;
+    stroke-width: 2;
+  }
+  100% {
+    r: 28;
+    opacity: 0;
+    stroke-width: 0.4;
+  }
+}
+
+@keyframes ct-flash {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes ct-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ct-dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+@keyframes ct-breathe {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+/* ripple-only: three finite pulses on a node the moment it is revealed */
+@utility animate-ping-finite {
+  animation: ct-ping-ring 1.6s ease-out 3;
+}
+@utility animate-breathe {
+  animation: ct-breathe 1.5s ease-in-out 3;
+}
+@utility animate-flash {
+  animation: ct-flash 0.55s ease-in-out 4;
+}
+@utility animate-rise {
+  animation: ct-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+/* route arcs: only while impacted by a live scenario, or on hover */
+@utility animate-dash {
+  animation: ct-dash 26s linear infinite;
+}
+
+@keyframes ct-dot-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+/* plant status dots: perpetual sonar ping + soft blink, staggered per node */
+@utility animate-ping-live {
+  animation: ct-ping-ring 2.4s ease-out infinite;
+}
+@utility animate-dot-blink {
+  animation: ct-dot-blink 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Hotspot marker — 3D stage clickable measure points */
+.hotspot-marker {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.hotspot-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: var(--hs, var(--primary));
+  border: 2px solid var(--panel-raised);
+  box-shadow: 0 0 8px color-mix(in oklab, var(--hs, var(--primary)) 80%, transparent);
+  transition: transform 180ms ease;
+}
+.hotspot-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 1.5px solid var(--hs, var(--primary));
+  opacity: 0.55;
+  animation: hotspot-pulse 2.2s ease-out infinite;
+}
+.hotspot-marker:hover .hotspot-dot,
+.hotspot-marker[data-selected="true"] .hotspot-dot {
+  transform: scale(1.35);
+}
+.hotspot-marker[data-selected="true"] .hotspot-ring {
+  animation-duration: 1.2s;
+  opacity: 0.9;
+}
+@keyframes hotspot-pulse {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,14 @@
+# Deferred decisions
+
+These are **not** forgotten. They are gated. Coding agents must not invent a default that pretends they are closed.
+
+| ID | Decision | Blocks | Notes |
+|---|---|---|---|
+| **D1** | CF grouping key for the **product** pass-rate / ribbon (checkzone vs colour×orientation vs both) | Graded KPI API and T06 ribbon | Owner: after DB is connected. T05 may freeze a **per-row** oracle without deciding D1. |
+| **D2** | Colour → `ref_color_family` mapping | Graded numbers **and** plant-offered ingest | **Decision locked 2026-09-22 (plant-scoped).** Family is `(plant, colour)`, not global `ref_color.grading_family`. Proof: SAP Ignite Orange is **MM**; AAT/FTM/FVL Ignite Orange is **MS** ([ADR 0010](ADR/0010-plant-scoped-color-family.md)). **Catalogue + ingest gate shipped** (Alembic 0014, T-STANDARDS-D2.md, T36 Admin). Owner signed STANDARDS-D2-AUDIT.md by directing implement. Do not use `color_group` as family. Do not set `grading_available: true` (D1 still open). Aluminum vs Aluminium stays an identity alias, not a second colour. |
+| **D3** | Plant data segregation (does FTM see AAT?) | RLS / query filters | Until then: all plants visible to all authenticated roles — documented as temporary in `03-SECURITY.md` §5. |
+| **D4** | Raw file retention in object store vs `stg_raw` 6-month purge | Storage policy / cost | Recommendation: keep original bytes ≥ 24 months in GCS; `stg_raw` purge can stay 6 months because facts are `NUMERIC` forever. |
+| **D5** | FVL onboarding | FVL loads | **Closed** (T32, 2026-09-21). The four close conditions are met in the same tree as T32-FVL-ACTIVATION.md: (1) G1 FVL named owner Efe Ularika and proof hash `c0f9a8dae0ec329da740af29b04f76ffcce980ff7059804724bffe302854cad0` (August `ZONE` set, T31); (2) T31 activation-ready contract in T31-FVL-ACTIVATION-READY.md; (3) G2 September export `Internship/Data/FVL/CF/09 Sep data/CF_Sep.xlsx` SHA-256 `e3ecc6a7e209f262eeb0906aae71edc31b6b27fbe0d3d13a611448ce9d0f6a34` — every leaf row has Serial No **and** Paintline (not copied into git); (4) Alembic `0011` `UPDATE ref_plant SET is_active = true WHERE plant_code = 'FVL'`, owner-publish of the stored G2-shaped `file_hash`, Engineer commit, History week cards agree with `GET /measurements`. Jan–Aug historical files remain non-committable (`VEHICLE_IDENTITY_MISSING` / `PAINTLINE_MISSING`). Zone `14` is `RCROOF` at FVL via the G1 picture map, not a silent FTM index. AAT/FTM/SAP July–August stay green. D1–D4 and D6 are unchanged. |
+| **D6** | Cloud SQL PostgreSQL **major** version | `infra/docker-compose.yml` image pin | Local README referenced PostgreSQL **18**. Confirm Cloud SQL offering and pin Compose to the same major. |
+
+When a decision is made, update this file, the relevant spec, and add an ADR if it reverses prior architecture.

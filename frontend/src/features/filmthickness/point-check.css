@@ -1,0 +1,153 @@
+.point-check {
+  --point-control-height: 44px;
+}
+.point-check-heading p {
+  max-width: 78ch;
+}
+.point-check-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.point-check-tabs button {
+  min-height: 48px;
+  padding: 10px 18px;
+  border-bottom: 2px solid transparent;
+  color: var(--muted-foreground);
+  font-weight: 600;
+  transition:
+    color 160ms ease-out,
+    background 160ms ease-out;
+}
+.point-check-tabs button[aria-selected="true"] {
+  color: var(--foreground);
+  border-bottom-color: var(--primary);
+  background: var(--primary-soft);
+}
+.point-check-tabs button:hover {
+  color: var(--foreground);
+  background: var(--surface-2);
+}
+.point-check :focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+.point-list-tools {
+  margin-top: 24px;
+}
+.point-list-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+.point-list-summary strong {
+  font-size: 16px;
+}
+.point-list-summary span {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.point-list-filters {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) repeat(2, minmax(150px, 0.55fr));
+  gap: 12px;
+  align-items: end;
+}
+.point-list-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+.point-list-filters input,
+.point-list-filters select {
+  width: 100%;
+  min-width: 0;
+  min-height: var(--point-control-height);
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--background);
+  color: var(--foreground);
+}
+.point-list-search > div {
+  position: relative;
+}
+.point-list-search svg {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: var(--muted-foreground);
+}
+.point-list-search input {
+  padding-left: 36px;
+}
+.point-filter-clear {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 44px;
+  gap: 6px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--primary);
+}
+.point-check-table {
+  max-height: 610px;
+  overflow: auto;
+  scrollbar-color: var(--border) transparent;
+}
+.point-check-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.point-check-table thead th {
+  background: var(--surface-2);
+}
+.point-check-table tbody tr:hover {
+  background: var(--surface-2);
+}
+.point-check-disclosure {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.point-check-disclosure > summary {
+  padding: 16px 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+.point-check [data-testid^="point-walk-"] {
+  margin-top: 0;
+  border: 0;
+  padding: 0 0 16px;
+}
+.point-check [data-testid="film-points-panel"],
+.point-check [data-testid="ws-points-panel"] {
+  margin-top: 0;
+}
+@media (max-width: 760px) {
+  .point-list-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .point-list-search {
+    grid-column: 1 / -1;
+  }
+  .point-list-filters label {
+    min-width: 0;
+  }
+  .point-check-tabs button {
+    flex: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .point-check-tabs button {
+    transition: none;
+  }
+}

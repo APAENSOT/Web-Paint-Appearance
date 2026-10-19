@@ -1,0 +1,89 @@
+# Cloud Run service: API + built frontend in one container (one origin).
+# Fill every ${...} and deploy with:
+#   gcloud run services replace infra/gcp/service.yaml --region ${REGION}
+# See infra/gcp/README.md for the one-time setup this expects.
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: paint-appearance
+  annotations:
+    # No sign-in in this release (AUTH_OPEN_ACCESS): reachable only from the
+    # company network / VPC, never the public internet. Change only together
+    # with real sign-in.
+    run.googleapis.com/ingress: internal
+spec:
+  template:
+    metadata:
+      annotations:
+        # gen2 is required for the Cloud Storage volume below.
+        run.googleapis.com/execution-environment: gen2
+        # The ingest worker runs in this process; it needs CPU between requests.
+        run.googleapis.com/cpu-throttling: "false"
+        run.googleapis.com/startup-cpu-boost: "true"
+        # One warm instance: no cold start for the first user of the day, and
+        # the worker keeps reading queued files. Workers claim with SKIP LOCKED,
+        # so more instances are safe.
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "3"
+        run.googleapis.com/cloudsql-instances: ${PROJECT_ID}:${REGION}:${SQL_INSTANCE}
+    spec:
+      serviceAccountName: paint-appearance-run@${PROJECT_ID}.iam.gserviceaccount.com
+      # Requests per instance. Each holds a pooled DB connection at most:
+      # maxScale x (DB_POOL_SIZE + DB_POOL_MAX_OVERFLOW) must stay under the
+      # Cloud SQL connection limit.
+      containerConcurrency: 40
+      # Long enough for a large upload or a measuring-order dry run.
+      timeoutSeconds: 300
+      containers:
+        - image: ${REGION}-docker.pkg.dev/${PROJECT_ID}/paint-appearance/app:${TAG}
+          ports:
+            - name: http1
+              containerPort: 8080
+          resources:
+            limits:
+              cpu: "1"
+              memory: 1Gi
+          env:
+            - name: ENV
+              value: production
+            - name: AUTH_OPEN_ACCESS
+              value: "true"
+            - name: RAW_STORE_DIR
+              value: /data/raw
+            - name: DB_POOL_SIZE
+              value: "5"
+            - name: DB_POOL_MAX_OVERFLOW
+              value: "5"
+            - name: APP_DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: paint-appearance-app-database-url
+                  key: latest
+          volumeMounts:
+            - name: raw-store
+              mountPath: /data/raw
+          startupProbe:
+            # Ready = database reachable as app_rw with no forbidden privileges
+            # and the raw store writable. A bad secret fails the deploy here.
+            httpGet:
+              path: /health/ready
+            periodSeconds: 5
+            failureThreshold: 24
+            timeoutSeconds: 4
+          livenessProbe:
+            httpGet:
+              path: /health/live
+            periodSeconds: 30
+            failureThreshold: 3
+            timeoutSeconds: 4
+      volumes:
+        # Uploaded workbook bytes (the raw store). Cloud Run's own disk is
+        # wiped on every restart; this bucket keeps them.
+        - name: raw-store
+          csi:
+            driver: gcsfuse.run.googleapis.com
+            volumeAttributes:
+              bucketName: ${RAW_BUCKET}
+              # The container runs as uid 10001 (Dockerfile); without this the
+              # mount is root's and the raw store cannot be written.
+              mountOptions: "uid=10001,gid=10001"

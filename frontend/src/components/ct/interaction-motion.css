@@ -1,0 +1,43 @@
+/* Feedback is finite. No moving measurement values or idle animation loops. */
+@media (prefers-reduced-motion: no-preference) {
+  .workspace-sidebar button,
+  .workspace-menu,
+  .workspace-drawer__done,
+  .plant-preview__domains button,
+  .monthly-back,
+  .studio-cad-buttons button {
+    transition:
+      transform var(--dur-fast) var(--ease-ct),
+      background-color var(--dur-fast) ease-out,
+      border-color var(--dur-fast) ease-out,
+      color var(--dur-fast) ease-out;
+  }
+  .workspace-sidebar button:active:not(:disabled),
+  .workspace-menu:active,
+  .workspace-drawer__done:active,
+  .plant-preview__domains button:active,
+  .monthly-back:active,
+  .studio-cad-buttons button:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+}
+/* The stable parent owns the transition; nested page headers do not replay entrances. */
+.workspace-results .animate-rise {
+  animation: none;
+}
+html:active-view-transition-type(plant-return)::view-transition-old(root) {
+  animation: plant-page-out var(--dur-fast) ease-out both;
+}
+html:active-view-transition-type(plant-return)::view-transition-new(root) {
+  animation: plant-return-in var(--dur-base) var(--ease-ct) both;
+}
+@keyframes plant-return-in {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

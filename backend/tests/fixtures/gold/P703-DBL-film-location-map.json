@@ -1,0 +1,2043 @@
+{
+  "task": "T47",
+  "verified_by": "Owner (architect chat 2026-09-29)",
+  "proof_document": "PELT_Comparison_P703_Ranger.xlsx",
+  "proof_hash": "cf76c0643ecd1647775bf205a8ddcfb2660484ce431032142686da1f824da85b",
+  "ftm94_example": "Desert Island Blue_RB_1943641_PP Build.xlsx",
+  "ftm94_sha256": "f7ef7544d264a222155c8e0af5b31e621d36650d5acdc347101447698ba5f1c3",
+  "note": "Location labels only. No thickness, VIN, or Job Number.",
+  "gold_points": [
+    {
+      "point_code": "001HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "002HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "003HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "004HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "005HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "006HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "007HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "008HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "009HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "010HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "011HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "012HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "013HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "014HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "015HOOD",
+      "orientation": "H"
+    },
+    {
+      "point_code": "016LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "017LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "018LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "019LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "020LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "021LTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "022LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "023LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "024LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "025LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "026LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "027LTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "028LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "029LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "030LTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "031LBPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "032LCPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "036LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "037LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "038LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "039LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "040LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "041LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "094LBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "042BOXINR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "043BOXINR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "062BOXINR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "063BOXINR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "044LBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_code": "045LBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_code": "046LBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_code": "059RBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_code": "060RBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_code": "061RBXFLOOR",
+      "orientation": "H"
+    },
+    {
+      "point_code": "056TGATEIN",
+      "orientation": "V"
+    },
+    {
+      "point_code": "057TGATEIN",
+      "orientation": "V"
+    },
+    {
+      "point_code": "058TGATEIN",
+      "orientation": "V"
+    },
+    {
+      "point_code": "047TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "048TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "049TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "050TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "051TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "052TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "053TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "054TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "055TGATE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "064RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "065RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "066RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "067RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "068RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "069RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "070RBOXSIDE",
+      "orientation": "V"
+    },
+    {
+      "point_code": "079RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "080RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "081RTRRDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "071RCPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "072RBPILLAR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "082RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "083RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "084RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "085RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "086RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "087RTFTDOOR",
+      "orientation": "V"
+    },
+    {
+      "point_code": "088RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "089RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "090RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "091RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "092RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "093RTFEND",
+      "orientation": "V"
+    },
+    {
+      "point_code": "033ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "034ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "035ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "073ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "074ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "075ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "076ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "077ROOF",
+      "orientation": "H"
+    },
+    {
+      "point_code": "078ROOF",
+      "orientation": "H"
+    }
+  ],
+  "maps": [
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "029LTFTDOOR",
+      "point_code": "022LTFTDOOR",
+      "raw_position": 29
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "029LTFTDOOR",
+      "point_code": "022LTFTDOOR",
+      "raw_position": 29
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "030LTFTDOOR",
+      "point_code": "023LTFTDOOR",
+      "raw_position": 30
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "030LTFTDOOR",
+      "point_code": "023LTFTDOOR",
+      "raw_position": 30
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "031LTFTDOOR",
+      "point_code": "024LTFTDOOR",
+      "raw_position": 31
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "031LTFTDOOR",
+      "point_code": "024LTFTDOOR",
+      "raw_position": 31
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "032LTFTDOOR",
+      "point_code": "025LTFTDOOR",
+      "raw_position": 32
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "032LTFTDOOR",
+      "point_code": "025LTFTDOOR",
+      "raw_position": 32
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "033LTFTDOOR",
+      "point_code": "026LTFTDOOR",
+      "raw_position": 33
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "033LTFTDOOR",
+      "point_code": "026LTFTDOOR",
+      "raw_position": 33
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "034LTFTDOOR",
+      "point_code": "027LTFTDOOR",
+      "raw_position": 34
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "034LTFTDOOR",
+      "point_code": "027LTFTDOOR",
+      "raw_position": 34
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "031LCPILLAR",
+      "point_code": "031LBPILLAR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "033LBOXSIDE",
+      "point_code": "036LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "059LBOXSIDE",
+      "point_code": "036LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "065LBOXSIDE",
+      "point_code": "036LBOXSIDE",
+      "raw_position": 65
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "065LBOXSIDE",
+      "point_code": "036LBOXSIDE",
+      "raw_position": 65
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "034LBOXSIDE",
+      "point_code": "037LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "060LBOXSIDE",
+      "point_code": "037LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "066LBOXSIDE",
+      "point_code": "037LBOXSIDE",
+      "raw_position": 66
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "066LBOXSIDE",
+      "point_code": "037LBOXSIDE",
+      "raw_position": 66
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "035LBOXSIDE",
+      "point_code": "038LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "061LBOXSIDE",
+      "point_code": "038LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "067LBOXSIDE",
+      "point_code": "038LBOXSIDE",
+      "raw_position": 67
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "067LBOXSIDE",
+      "point_code": "038LBOXSIDE",
+      "raw_position": 67
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "036LBOXSIDE",
+      "point_code": "039LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "062LBOXSIDE",
+      "point_code": "039LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "068LBOXSIDE",
+      "point_code": "039LBOXSIDE",
+      "raw_position": 68
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "068LBOXSIDE",
+      "point_code": "039LBOXSIDE",
+      "raw_position": 68
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "037LBOXSIDE",
+      "point_code": "040LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "063LBOXSIDE",
+      "point_code": "040LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "069LBOXSIDE",
+      "point_code": "040LBOXSIDE",
+      "raw_position": 69
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "069LBOXSIDE",
+      "point_code": "040LBOXSIDE",
+      "raw_position": 69
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "038LBOXSIDE",
+      "point_code": "041LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "064LBOXSIDE",
+      "point_code": "041LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "070LBOXSIDE",
+      "point_code": "041LBOXSIDE",
+      "raw_position": 70
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "070LBOXSIDE",
+      "point_code": "041LBOXSIDE",
+      "raw_position": 70
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "039LBOXSIDE",
+      "point_code": "094LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "065LBOXSIDE",
+      "point_code": "094LBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "040BOXINR",
+      "point_code": "042BOXINR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "041BOXINR",
+      "point_code": "043BOXINR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "042BOXINR",
+      "point_code": "062BOXINR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "043BOXINR",
+      "point_code": "063BOXINR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "070LBXFLOOR",
+      "point_code": "044LBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "090LBXFLOOR",
+      "point_code": "044LBXFLOOR",
+      "raw_position": 90
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "090LBXFLOOR",
+      "point_code": "044LBXFLOOR",
+      "raw_position": 90
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "047LBXFLOOR",
+      "point_code": "045LBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "071LBXFLOOR",
+      "point_code": "045LBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "091LBXFLOOR",
+      "point_code": "045LBXFLOOR",
+      "raw_position": 91
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "091LBXFLOOR",
+      "point_code": "045LBXFLOOR",
+      "raw_position": 91
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "048LBXFLOOR",
+      "point_code": "046LBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "072LBXFLOOR",
+      "point_code": "046LBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "092LBXFLOOR",
+      "point_code": "046LBXFLOOR",
+      "raw_position": 92
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "092LBXFLOOR",
+      "point_code": "046LBXFLOOR",
+      "raw_position": 92
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "045RBXFLOOR",
+      "point_code": "059RBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "093RBXFLOOR",
+      "point_code": "059RBXFLOOR",
+      "raw_position": 93
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "093RBXFLOOR",
+      "point_code": "059RBXFLOOR",
+      "raw_position": 93
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "046RBXFLOOR",
+      "point_code": "060RBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "094RBXFLOOR",
+      "point_code": "060RBXFLOOR",
+      "raw_position": 94
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "094RBXFLOOR",
+      "point_code": "060RBXFLOOR",
+      "raw_position": 94
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "049RBXFLOOR",
+      "point_code": "061RBXFLOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "050TGATEIN",
+      "point_code": "056TGATEIN",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "076TGATEIN",
+      "point_code": "056TGATEIN",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "051TGATEIN",
+      "point_code": "057TGATEIN",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "077TGATEIN",
+      "point_code": "057TGATEIN",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "052TGATEIN",
+      "point_code": "058TGATEIN",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "078TGATEIN",
+      "point_code": "058TGATEIN",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "053TGATE",
+      "point_code": "047TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "079TGATE",
+      "point_code": "047TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "071TGATE",
+      "point_code": "047TGATE",
+      "raw_position": 71
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "071TGATE",
+      "point_code": "047TGATE",
+      "raw_position": 71
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "054TGATE",
+      "point_code": "048TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "080TGATE",
+      "point_code": "048TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "072TGATE",
+      "point_code": "048TGATE",
+      "raw_position": 72
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "072TGATE",
+      "point_code": "048TGATE",
+      "raw_position": 72
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "055TGATE",
+      "point_code": "049TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "081TGATE",
+      "point_code": "049TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "073TGATE",
+      "point_code": "049TGATE",
+      "raw_position": 73
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "073TGATE",
+      "point_code": "049TGATE",
+      "raw_position": 73
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "056TGATE",
+      "point_code": "050TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "082TGATE",
+      "point_code": "050TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "074TGATE",
+      "point_code": "050TGATE",
+      "raw_position": 74
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "074TGATE",
+      "point_code": "050TGATE",
+      "raw_position": 74
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "057TGATE",
+      "point_code": "051TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "083TGATE",
+      "point_code": "051TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "075TGATE",
+      "point_code": "051TGATE",
+      "raw_position": 75
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "075TGATE",
+      "point_code": "051TGATE",
+      "raw_position": 75
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "058TGATE",
+      "point_code": "052TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "084TGATE",
+      "point_code": "052TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "076TGATE",
+      "point_code": "052TGATE",
+      "raw_position": 76
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "076TGATE",
+      "point_code": "052TGATE",
+      "raw_position": 76
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "059TGATE",
+      "point_code": "053TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "085TGATE",
+      "point_code": "053TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "077TGATE",
+      "point_code": "053TGATE",
+      "raw_position": 77
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "077TGATE",
+      "point_code": "053TGATE",
+      "raw_position": 77
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "060TGATE",
+      "point_code": "054TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "086TGATE",
+      "point_code": "054TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "078TGATE",
+      "point_code": "054TGATE",
+      "raw_position": 78
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "078TGATE",
+      "point_code": "054TGATE",
+      "raw_position": 78
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "061TGATE",
+      "point_code": "055TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "087TGATE",
+      "point_code": "055TGATE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "079TGATE",
+      "point_code": "055TGATE",
+      "raw_position": 79
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "079TGATE",
+      "point_code": "055TGATE",
+      "raw_position": 79
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "062RBOXSIDE",
+      "point_code": "064RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "088RBOXSIDE",
+      "point_code": "064RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "080RBOXSIDE",
+      "point_code": "064RBOXSIDE",
+      "raw_position": 80
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "080RBOXSIDE",
+      "point_code": "064RBOXSIDE",
+      "raw_position": 80
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "063RBOXSIDE",
+      "point_code": "065RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "089RBOXSIDE",
+      "point_code": "065RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "081RBOXSIDE",
+      "point_code": "065RBOXSIDE",
+      "raw_position": 81
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "081RBOXSIDE",
+      "point_code": "065RBOXSIDE",
+      "raw_position": 81
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "064RBOXSIDE",
+      "point_code": "066RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "090RBOXSIDE",
+      "point_code": "066RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "082RBOXSIDE",
+      "point_code": "066RBOXSIDE",
+      "raw_position": 82
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "082RBOXSIDE",
+      "point_code": "066RBOXSIDE",
+      "raw_position": 82
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "065RBOXSIDE",
+      "point_code": "067RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "091RBOXSIDE",
+      "point_code": "067RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "083RBOXSIDE",
+      "point_code": "067RBOXSIDE",
+      "raw_position": 83
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "083RBOXSIDE",
+      "point_code": "067RBOXSIDE",
+      "raw_position": 83
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "066RBOXSIDE",
+      "point_code": "068RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "092RBOXSIDE",
+      "point_code": "068RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "084RBOXSIDE",
+      "point_code": "068RBOXSIDE",
+      "raw_position": 84
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "084RBOXSIDE",
+      "point_code": "068RBOXSIDE",
+      "raw_position": 84
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "067RBOXSIDE",
+      "point_code": "069RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "093RBOXSIDE",
+      "point_code": "069RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "085RBOXSIDE",
+      "point_code": "069RBOXSIDE",
+      "raw_position": 85
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "085RBOXSIDE",
+      "point_code": "069RBOXSIDE",
+      "raw_position": 85
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "068RBOXSIDE",
+      "point_code": "070RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "094RBOXSIDE",
+      "point_code": "070RBOXSIDE",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "069RTRRDOOR",
+      "point_code": "079RTRRDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "033RTRRDOOR",
+      "point_code": "079RTRRDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "045RTRRDOOR",
+      "point_code": "079RTRRDOOR",
+      "raw_position": 45
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "045RTRRDOOR",
+      "point_code": "079RTRRDOOR",
+      "raw_position": 45
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "070RTRRDOOR",
+      "point_code": "080RTRRDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "034RTRRDOOR",
+      "point_code": "080RTRRDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "046RTRRDOOR",
+      "point_code": "080RTRRDOOR",
+      "raw_position": 46
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "046RTRRDOOR",
+      "point_code": "080RTRRDOOR",
+      "raw_position": 46
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "071RTRRDOOR",
+      "point_code": "081RTRRDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "035RTRRDOOR",
+      "point_code": "081RTRRDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "047RTRRDOOR",
+      "point_code": "081RTRRDOOR",
+      "raw_position": 47
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "047RTRRDOOR",
+      "point_code": "081RTRRDOOR",
+      "raw_position": 47
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "072RCPILLAR",
+      "point_code": "071RCPILLAR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "073RCPILLAR",
+      "point_code": "072RBPILLAR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "074RTFTDOOR",
+      "point_code": "082RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "038RTFTDOOR",
+      "point_code": "082RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "050RTFTDOOR",
+      "point_code": "082RTFTDOOR",
+      "raw_position": 50
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "050RTFTDOOR",
+      "point_code": "082RTFTDOOR",
+      "raw_position": 50
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "075RTFTDOOR",
+      "point_code": "083RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "039RTFTDOOR",
+      "point_code": "083RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "051RTFTDOOR",
+      "point_code": "083RTFTDOOR",
+      "raw_position": 51
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "051RTFTDOOR",
+      "point_code": "083RTFTDOOR",
+      "raw_position": 51
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "076RTFTDOOR",
+      "point_code": "084RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "040RTFTDOOR",
+      "point_code": "084RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "052RTFTDOOR",
+      "point_code": "084RTFTDOOR",
+      "raw_position": 52
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "052RTFTDOOR",
+      "point_code": "084RTFTDOOR",
+      "raw_position": 52
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "077RTFTDOOR",
+      "point_code": "085RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "041RTFTDOOR",
+      "point_code": "085RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "053RTFTDOOR",
+      "point_code": "085RTFTDOOR",
+      "raw_position": 53
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "053RTFTDOOR",
+      "point_code": "085RTFTDOOR",
+      "raw_position": 53
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "078RTFTDOOR",
+      "point_code": "086RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "042RTFTDOOR",
+      "point_code": "086RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "054RTFTDOOR",
+      "point_code": "086RTFTDOOR",
+      "raw_position": 54
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "054RTFTDOOR",
+      "point_code": "086RTFTDOOR",
+      "raw_position": 54
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "079RTFTDOOR",
+      "point_code": "087RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "043RTFTDOOR",
+      "point_code": "087RTFTDOOR",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "055RTFTDOOR",
+      "point_code": "087RTFTDOOR",
+      "raw_position": 55
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "055RTFTDOOR",
+      "point_code": "087RTFTDOOR",
+      "raw_position": 55
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "080RTFEND",
+      "point_code": "088RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "044RTFEND",
+      "point_code": "088RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "058RTFEND",
+      "point_code": "088RTFEND",
+      "raw_position": 58
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "058RTFEND",
+      "point_code": "088RTFEND",
+      "raw_position": 58
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "081RTFEND",
+      "point_code": "089RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "045RTFEND",
+      "point_code": "089RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "059RTFEND",
+      "point_code": "089RTFEND",
+      "raw_position": 59
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "059RTFEND",
+      "point_code": "089RTFEND",
+      "raw_position": 59
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "082RTFEND",
+      "point_code": "090RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "046RTFEND",
+      "point_code": "090RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "060RTFEND",
+      "point_code": "090RTFEND",
+      "raw_position": 60
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "060RTFEND",
+      "point_code": "090RTFEND",
+      "raw_position": 60
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "083RTFEND",
+      "point_code": "091RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "047RTFEND",
+      "point_code": "091RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "061RTFEND",
+      "point_code": "091RTFEND",
+      "raw_position": 61
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "061RTFEND",
+      "point_code": "091RTFEND",
+      "raw_position": 61
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "084RTFEND",
+      "point_code": "092RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "048RTFEND",
+      "point_code": "092RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "062RTFEND",
+      "point_code": "092RTFEND",
+      "raw_position": 62
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "062RTFEND",
+      "point_code": "092RTFEND",
+      "raw_position": 62
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "085RTFEND",
+      "point_code": "093RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "049TRFEND",
+      "point_code": "093RTFEND",
+      "raw_position": null
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "086ROOF",
+      "point_code": "033ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "050ROOF",
+      "point_code": "033ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "023ROOF",
+      "point_code": "033ROOF",
+      "raw_position": 23
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "023ROOF",
+      "point_code": "033ROOF",
+      "raw_position": 23
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "087ROOF",
+      "point_code": "034ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "051ROOF",
+      "point_code": "034ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "024ROOF",
+      "point_code": "034ROOF",
+      "raw_position": 24
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "024ROOF",
+      "point_code": "034ROOF",
+      "raw_position": 24
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "088ROOF",
+      "point_code": "035ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "052ROOF",
+      "point_code": "035ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "025ROOF",
+      "point_code": "035ROOF",
+      "raw_position": 25
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "025ROOF",
+      "point_code": "035ROOF",
+      "raw_position": 25
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "089ROOF",
+      "point_code": "073ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "053ROOF",
+      "point_code": "073ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "026ROOF",
+      "point_code": "073ROOF",
+      "raw_position": 26
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "026ROOF",
+      "point_code": "073ROOF",
+      "raw_position": 26
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "090ROOF",
+      "point_code": "074ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "054ROOF",
+      "point_code": "074ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "027ROOF",
+      "point_code": "074ROOF",
+      "raw_position": 27
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "027ROOF",
+      "point_code": "074ROOF",
+      "raw_position": 27
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "091ROOF",
+      "point_code": "075ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "055ROOF",
+      "point_code": "075ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "028ROOF",
+      "point_code": "075ROOF",
+      "raw_position": 28
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "028ROOF",
+      "point_code": "075ROOF",
+      "raw_position": 28
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "092ROOF",
+      "point_code": "076ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "056ROOF",
+      "point_code": "076ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "041ROOF",
+      "point_code": "076ROOF",
+      "raw_position": 41
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "041ROOF",
+      "point_code": "076ROOF",
+      "raw_position": 41
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "093ROOF",
+      "point_code": "077ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "057ROOF",
+      "point_code": "077ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "042ROOF",
+      "point_code": "077ROOF",
+      "raw_position": 42
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "042ROOF",
+      "point_code": "077ROOF",
+      "raw_position": 42
+    },
+    {
+      "plant_code": "SAP",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "094ROOF",
+      "point_code": "078ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "058ROOF",
+      "point_code": "078ROOF",
+      "raw_position": null
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "043ROOF",
+      "point_code": "078ROOF",
+      "raw_position": 43
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "043ROOF",
+      "point_code": "078ROOF",
+      "raw_position": 43
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "095RBXFLOOR",
+      "point_code": "061RBXFLOOR",
+      "raw_position": 95
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "096TGATEIN",
+      "point_code": "056TGATEIN",
+      "raw_position": 96
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "097TGATEIN",
+      "point_code": "057TGATEIN",
+      "raw_position": 97
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "098TGATEIN",
+      "point_code": "058TGATEIN",
+      "raw_position": 98
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "095RBXFLOOR",
+      "point_code": "061RBXFLOOR",
+      "raw_position": 95
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "096TGATEIN",
+      "point_code": "056TGATEIN",
+      "raw_position": 96
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "097TGATEIN",
+      "point_code": "057TGATEIN",
+      "raw_position": 97
+    },
+    {
+      "plant_code": "FTM",
+      "model_code": "P703 DBL RAPTOR",
+      "raw_location_norm": "098TGATEIN",
+      "point_code": "058TGATEIN",
+      "raw_position": 98
+    }
+  ],
+  "held_not_seeded": [
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "073LBXFLOOR",
+      "would_map_to": "059RBXFLOOR",
+      "reason": "D-FT-16 left spelling onto right-floor gold; do not seed"
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "074LBXFLOOR",
+      "would_map_to": "060RBXFLOOR",
+      "reason": "D-FT-16 left spelling onto right-floor gold; do not seed"
+    },
+    {
+      "plant_code": "AAT",
+      "model_code": "P703 DBL RANGER",
+      "raw_location_norm": "075LBXFLOOR",
+      "would_map_to": "061RBXFLOOR",
+      "reason": "D-FT-16 left spelling onto right-floor gold; do not seed"
+    }
+  ]
+}

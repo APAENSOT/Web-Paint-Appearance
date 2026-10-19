@@ -1,0 +1,117 @@
+.film-standards__header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.film-standards__header h2 {
+  letter-spacing: -0.025em;
+}
+
+.film-shared-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.film-shared-card {
+  min-height: 238px;
+}
+
+.film-shared-card table,
+.film-family-table .film-colour-table {
+  font-variant-numeric: tabular-nums;
+}
+
+.film-shared-card table :is(th, td) {
+  padding-inline: 4px;
+}
+
+.film-shared-card table td {
+  white-space: nowrap;
+}
+
+.film-shared-card tbody tr + tr {
+  border-top: 1px solid var(--border);
+}
+
+.film-colour-toolbar {
+  margin-top: 32px;
+}
+
+.film-layer + .film-layer {
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.film-layer h4 {
+  letter-spacing: -0.02em;
+}
+
+.film-family-table__count {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.film-family-table tbody tr:hover {
+  background: var(--surface-2);
+}
+
+.film-family-table .film-colour-table thead {
+  background: color-mix(in oklch, var(--surface-2) 55%, var(--panel));
+}
+
+.film-family-table .film-colour-table td:nth-child(2),
+.film-family-table .film-colour-table td:nth-child(4) {
+  border-left: 1px solid var(--border);
+}
+
+@media (max-width: 767px) {
+  .film-shared-card {
+    min-height: 0;
+  }
+
+  .film-family-table .film-colour-table td:nth-child(2),
+  .film-family-table .film-colour-table td:nth-child(4) {
+    border-left: 0;
+  }
+
+  .film-standards .film-number-cell {
+    border-top: 1px solid var(--border);
+  }
+
+  .film-standards .film-colour-table tbody tr {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 14px;
+  }
+
+  .film-standards .film-colour-name,
+  .film-standards .film-action {
+    grid-column: 1 / -1;
+  }
+
+  .film-standards .film-number-cell {
+    display: block;
+    min-width: 0;
+    padding-block: 9px;
+  }
+
+  .film-standards .film-mobile-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 640px) {
+  .film-shared-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .film-shared-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

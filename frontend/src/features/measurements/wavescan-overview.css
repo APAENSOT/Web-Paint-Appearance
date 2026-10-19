@@ -1,0 +1,196 @@
+.wavescan-overview .wavescan-chart-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+.wavescan-box-target,
+.wavescan-label-target {
+  cursor: pointer;
+  outline: none;
+}
+.wavescan-box-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2;
+  pointer-events: all;
+}
+.wavescan-box-target:hover .wavescan-box-hit {
+  stroke: color-mix(in oklch, var(--primary) 55%, transparent);
+}
+.wavescan-box-target:focus-visible .wavescan-box-hit,
+.wavescan-box-target[aria-expanded="true"] .wavescan-box-hit {
+  stroke: var(--primary);
+}
+.wavescan-label-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2;
+  pointer-events: all;
+}
+.wavescan-label-target:hover .wavescan-label-hit,
+.wavescan-label-target:focus-visible .wavescan-label-hit,
+.wavescan-label-target[aria-expanded="true"] .wavescan-label-hit {
+  stroke: var(--primary);
+}
+.wavescan-summary {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-2);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.wavescan-summary-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+.wavescan-summary-heading h5 {
+  font-size: 16px;
+}
+.wavescan-close {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.wavescan-close:hover {
+  background: color-mix(in oklch, var(--primary) 10%, transparent);
+}
+.wavescan-close:focus-visible,
+.wavescan-summary summary:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.wavescan-summary-primary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.wavescan-summary dt {
+  color: var(--muted-foreground);
+}
+.wavescan-summary-primary dd {
+  font-size: 22px;
+  margin-top: 4px;
+}
+.wavescan-summary-primary dd span {
+  font-size: 12px;
+}
+.wavescan-summary-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px 16px;
+  margin-top: 12px;
+}
+.wavescan-summary details {
+  border-top: 1px solid var(--border);
+}
+.wavescan-summary summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+.wavescan-summary [data-wavescan-status="PASS"] {
+  color: var(--nominal);
+}
+.wavescan-summary [data-wavescan-status="WARNING"] {
+  color: var(--caution);
+}
+.wavescan-summary [data-wavescan-status="FAIL"] {
+  color: var(--critical);
+}
+.wavescan-summary [data-wavescan-status="NONE"] {
+  color: var(--muted-foreground);
+}
+@media (max-width: 500px) {
+  .wavescan-summary-primary {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wavescan-summary {
+    animation: none;
+  }
+}
+
+.wavescan-overview .wavescan-orientation-panel {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+.wavescan-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px 24px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.wavescan-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
+  margin-left: auto;
+  max-width: 100%;
+}
+.wavescan-legend li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wavescan-overview .wavescan-summary {
+  background: var(--background);
+}
+.wavescan-published-standard {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface-2);
+}
+.wavescan-published-standard h6 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.wavescan-published-standard dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px 16px;
+}
+.wavescan-reading-list {
+  max-height: 240px;
+  overflow: auto;
+  margin-top: 8px;
+}
+.wavescan-reading-list li {
+  padding: 8px 4px;
+  border-top: 1px solid var(--border);
+}
+.wavescan-reading-fields {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(0, 2fr);
+  gap: 8px 16px;
+}
+.wavescan-reading-fields dt {
+  font-size: 12px;
+}
+.wavescan-reading-list:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+@media (max-width: 500px) {
+  .wavescan-overview .wavescan-orientation-panel {
+    padding: 12px;
+  }
+  .wavescan-reading-fields {
+    grid-template-columns: 1fr;
+  }
+}

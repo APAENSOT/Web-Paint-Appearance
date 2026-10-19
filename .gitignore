@@ -1,0 +1,62 @@
+# --- secrets: only the *.example files are tracked -------------------------
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+*service-account*.json
+.pgpass
+
+# --- plant data: never commit a database dump or uploaded workbooks --------
+data/
+*.dump
+*.backup
+*.sql.gz
+*.zip
+*.xlsx
+*.xls
+*.xlsm
+~$*
+
+# --- Python ----------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+htmlcov/
+.coverage
+coverage.xml
+
+# --- Node / frontend -------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/.tanstack/
+*.local
+test-results/
+playwright-report/
+
+# --- logs and local servers ------------------------------------------------
+*.log
+*.err
+logs/
+
+# --- OS / editors / AI assistant working folders ---------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+.cursor/
+.agents/
+.superpowers/
+.codex/
+work/
