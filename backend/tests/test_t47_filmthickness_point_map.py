@@ -50,7 +50,7 @@ from tests.test_t46_filmthickness import (
 
 pytestmark = pytest.mark.ingest
 
-EVIDENCE = (Path(__file__).resolve().parent / "fixtures" / "gold"
+EVIDENCE = (Path(__file__).resolve().parents[1] / "migrations" / "seed"
             / "P703-DBL-film-location-map.json")
 DATA = json.loads(EVIDENCE.read_text(encoding="utf-8"))
 COLOURS = ("Absolute Black", "Arctic White", "Frozen White", "Command Grey",

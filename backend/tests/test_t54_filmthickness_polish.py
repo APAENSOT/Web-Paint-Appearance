@@ -54,7 +54,7 @@ pytestmark = pytest.mark.ingest
 
 REPO = Path(__file__).resolve().parents[2]
 EVIDENCE = json.loads(
-    (REPO / "backend" / "tests" / "fixtures" / "gold" / "FTM-QS-film-points.json").read_text(encoding="utf-8")
+    (REPO / "backend" / "migrations" / "seed" / "FTM-QS-film-points.json").read_text(encoding="utf-8")
 )
 FTM_GOLD = [p["point_code"] for p in EVIDENCE["locations"]]
 FTM_MODELS = ("P703 DBL RANGER", "P703 DBL RAPTOR", "P703 RAPCAP", "P703 SGL")

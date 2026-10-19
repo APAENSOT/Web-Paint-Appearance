@@ -60,10 +60,51 @@ jobs:
           T01_DB: none
         run: python -m pytest tests -q -o addopts=""
 
-  image:
+  # The Cloud Run image, run the way Cloud Run runs it, against PostgreSQL.
+  container:
     runs-on: ubuntu-latest
     needs: [frontend, backend]
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: ci-only-postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s
+          --health-timeout 5s --health-retries 10
+    env:
+      PGPASSWORD: ci-only-postgres
     steps:
       - uses: actions/checkout@v4
       - name: Build the Cloud Run image
         run: docker build --tag paint-appearance:ci .
+      - name: Roles and database (infra/gcp/README.md, step 3)
+        run: >-
+          psql -h 127.0.0.1 -U postgres -d postgres -v ON_ERROR_STOP=1
+          -v migrator_password=ci-migrator -v app_rw_password=ci-app
+          -f db/create_roles.sql
+      - name: Migrate as migrator (the migrate job's command)
+        # 0025 needs the restored plant data; an empty database stops at 0024.
+        run: >-
+          docker run --rm --network host
+          -e MIGRATOR_DATABASE_URL=postgresql+psycopg://migrator:ci-migrator@127.0.0.1:5432/paint_appearance
+          paint-appearance:ci alembic upgrade 0024
+      - name: Start the service with the Cloud Run settings
+        run: >-
+          docker run -d --name app --network host -e PORT=8080
+          -e AUTH_OPEN_ACCESS=true
+          -e APP_DATABASE_URL=postgresql+psycopg://app_rw:ci-app@127.0.0.1:5432/paint_appearance
+          paint-appearance:ci
+      - name: Health, identity and the site answer
+        run: |
+          set -e
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8080/health/ready && break; sleep 2; done
+          curl -fsS http://127.0.0.1:8080/health/ready | grep -q '"ready"'
+          curl -fsS http://127.0.0.1:8080/api/v1/auth/me | grep -q '"open-access"'
+          curl -fsS http://127.0.0.1:8080/ | grep -qi '<div id="root"'
+          curl -fsSI http://127.0.0.1:8080/ | grep -qi 'strict-transport-security'
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/docs)" = 404
+      - name: Logs
+        if: failure()
+        run: docker logs app

@@ -60,6 +60,7 @@ def test_spa_cache_rules_and_client_routes(served):
     assert served.get("/logo.svg").headers["cache-control"] == "public, max-age=3600"
     route = served.get("/plant/SAP")
     assert route.text == "<html>shell</html>" and route.headers["cache-control"] == "no-cache"
+    assert served.head("/plant/SAP").status_code == 200, "HEAD answers like GET"
 
 
 def test_spa_never_shadows_the_api_or_leaves_its_folder(served):

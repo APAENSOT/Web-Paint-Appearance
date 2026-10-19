@@ -6,6 +6,7 @@ definitions and the runbook.
 
 - **Deploy it:** follow [infra/gcp/README.md](infra/gcp/README.md) step by step.
 - **Understand it:** read this page, then [docs/README.md](docs/README.md).
+- **Before you start:** [docs/HANDOVER.md](docs/HANDOVER.md): what is done and checked, what is not, and the decisions that are yours.
 
 ---
 

@@ -39,7 +39,7 @@ pytestmark = pytest.mark.ingest
 
 REPO = Path(__file__).resolve().parents[2]
 FTM_GOLD = [p["point_code"] for p in json.loads(
-    (REPO / "backend" / "tests" / "fixtures" / "gold" / "FTM-QS-film-points.json").read_text(encoding="utf-8")
+    (REPO / "backend" / "migrations" / "seed" / "FTM-QS-film-points.json").read_text(encoding="utf-8")
 )["locations"]]
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 ZERO_LAYERS = {"ecoat": None, "primer": None, "base": None, "clear": None}

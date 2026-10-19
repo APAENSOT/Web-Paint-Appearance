@@ -50,7 +50,9 @@ if str(BACKEND) not in sys.path:
 
 from app.domain.ws_plant_gold import gold_key, ws_panel_group, ws_tolerance  # noqa: E402
 
-EVIDENCE = BACKEND.parent / "docs" / "reports" / "evidence" / "WS-plant-gold.json"
+# Shipped with the migrations so a fresh database can be built anywhere,
+# including inside the image (docs/ is not copied there).
+EVIDENCE = Path(__file__).resolve().parents[1] / "seed" / "WS-plant-gold.json"
 
 revision = "0022"
 down_revision = "0021"

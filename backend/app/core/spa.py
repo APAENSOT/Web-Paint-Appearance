@@ -34,7 +34,8 @@ def mount_spa(app: FastAPI, root: Path) -> None:
     if not index.is_file():
         raise RuntimeError(f"STATIC_DIR {root} has no index.html; build the frontend first.")
 
-    @app.get("/{path:path}", include_in_schema=False)
+    # HEAD too: uptime checks and load balancers probe with it.
+    @app.api_route("/{path:path}", methods=["GET", "HEAD"], include_in_schema=False)
     def spa(path: str, request: Request) -> FileResponse:
         if path.startswith(API_PREFIXES):
             raise HTTPException(status_code=404, detail="Not found.")

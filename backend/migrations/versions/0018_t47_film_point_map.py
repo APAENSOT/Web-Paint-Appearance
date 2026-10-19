@@ -34,7 +34,9 @@ from alembic import op
 from sqlalchemy import text
 
 BACKEND = Path(__file__).resolve().parents[2]
-EVIDENCE = BACKEND.parent / "docs" / "reports" / "evidence" / "P703-DBL-film-location-map.json"
+# Shipped with the migrations so a fresh database can be built anywhere,
+# including inside the image (docs/ is not copied there).
+EVIDENCE = Path(__file__).resolve().parents[1] / "seed" / "P703-DBL-film-location-map.json"
 
 revision = "0018"
 down_revision = "0017"

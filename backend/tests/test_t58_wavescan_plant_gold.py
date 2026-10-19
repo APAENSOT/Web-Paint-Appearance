@@ -40,7 +40,7 @@ pytestmark = pytest.mark.ingest
 
 REPO = Path(__file__).resolve().parents[2]
 EVIDENCE = json.loads(
-    (REPO / "backend" / "tests" / "fixtures" / "gold" / "WS-plant-gold.json").read_text(encoding="utf-8")
+    (REPO / "backend" / "migrations" / "seed" / "WS-plant-gold.json").read_text(encoding="utf-8")
 )
 GOLD = {(c["plant_code"], c["model_code"]): [p["zone_code"] for p in c["points"]]
         for c in EVIDENCE["catalogues"]}

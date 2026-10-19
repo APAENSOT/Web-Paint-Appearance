@@ -48,7 +48,7 @@ from tests.test_t46_filmthickness import (
 pytestmark = pytest.mark.ingest
 
 REPO = Path(__file__).resolve().parents[2]
-EVIDENCE_DIR = REPO / "backend" / "tests" / "fixtures" / "gold"
+EVIDENCE_DIR = REPO / "backend" / "migrations" / "seed"
 AAT = json.loads((EVIDENCE_DIR / "AAT-P703-film-points.json").read_text(encoding="utf-8"))
 AAT_GOLD = [p["point_code"] for p in AAT["locations"]]
 U704_GOLD = next(
